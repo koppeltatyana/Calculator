@@ -26,7 +26,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->pushButton_plus, SIGNAL(clicked(bool)), this, SLOT(math_operations()));
     connect(ui->pushButton_mult, SIGNAL(clicked(bool)), this, SLOT(math_operations()));
 
-    connect(ui->pushButton_clear, SIGNAL(clicked(bool)), this, SLOT(on_pushButton_dot_clicked()));
+    connect(ui->pushButton_clear, SIGNAL(clicked(bool)), this, SLOT(on_pushButton_clear_clicked()));
 
     ui->pushButton_devide->setCheckable(true);//делаем так, чтобы мы могли нажать все эти кнопки
     ui->pushButton_plus->setCheckable(true);
